@@ -2,11 +2,10 @@
   <head>
     <meta charset="utf-8">
     <title>Simple Web Page Calculator</title>
-    <script type="text/javascript" src="calculator.js"></script>
   </head>
   <body>
     <!-- form to receive number for mathematical operation -->
-    <form>
+    <form onsubmit="calculate();">
       <!-- first number in operation -->
       <input type="number" id="input1">
       <!-- mathematical operator options -->
@@ -24,5 +23,8 @@
 
     <!-- container to append final calculation -->
     <div id="product"></div>
+
+    <!-- load javascript -->
+    <script type="text/javascript" src="calculator.js"></script>
   </body>
 </html>
