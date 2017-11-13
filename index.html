@@ -1,30 +1,35 @@
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Simple Web Page Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
+    <div id="title">
+      <h1>Enter If You Dare!</h1>
+    </div>
     <!-- form to receive number for mathematical operation -->
-    <form onsubmit="calculate();">
-      <!-- first number in operation -->
-      <input type="number" id="input1">
-      <!-- mathematical operator options -->
-      <select>
-        <option value="add">plus</option>
-        <option value="subtract">minus</option>
-        <option value="multiply">times</option>
-        <<option value="divide">divided by</option>
-      </select>
-      <!-- second number in operation -->
-      <input type="number" id="input2">
-      <!-- submit form to use contents in expression -->
-      <button type="submit">calculate!</button>
-    </form>
+    <div class="number-input">
+      <form onsubmit="calculate()">
+        <!-- first number in operation -->
+        <input type="number" id="input1">
+        <!-- mathematical operator options -->
+        <select>
+          <option value="add">plus</option>
+          <option value="subtract">minus</option>
+          <option value="multiply">times</option>
+          <option value="divide">divided by</option>
+        </select>
+        <!-- second number in operation -->
+        <input type="number" id="input2">
+        <!-- submit form to use contents in expression -->
+        <button type="submit">calculate!</button>
+      </form>
 
-    <!-- container to append final calculation -->
-    <div id="product"></div>
+      <!-- container to append final calculation -->
+      <div id="product"></div>
+    </div>
 
     <!-- load javascript -->
-    <script type="text/javascript" src="calculator.js"></script>
+    <script src="calculator.js"></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+body, html {
+  background-image: url("img/math-image.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title, h1 {
+  text-align: center;
+  vertical-align: middle;
+  font: black;
+  font-family: sans-serif;
+  background-color: gray;
+  height: 8%;
+}
+
+.number-input {
+  text-align: center;
+}
+
+input {
+  max-width: 15%;
+  height: 45px;
+  font-size: 200%;
+}
+
+select, button {
+  margin-top: 20px;
+  height: 25px;
+}
+
+#answer {
+  margin: 15%;
+  background-color: white;
+  max-width: 35%;
+  max-height: 25%;
+  font-size: 250%;
+  font-family: sans-serif;
+  color: red;
+  text-align: center;
+  display: inline-block;
+  padding: 2.5px;
+}
